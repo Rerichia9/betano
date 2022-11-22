@@ -47,6 +47,102 @@
   }
 }
 
+@media (max-height: 767px) {
+  .logo {
+    width: 225px;
+    margin-bottom: 0px;
+  }
+
+  .main__right {
+    margin-top: 37px;
+  }
+
+  .title {
+    font-size: 40px;
+    line-height: 86px;
+  }
+
+  .btn-forward {
+    top: -20px;
+    font-size: 16px;
+    line-height: 12px;
+    padding: 10px 24px 5px;
+  }
+
+  .wrap-btn {
+    font-size: 20px;
+    line-height: 48px;
+    padding: 7px 33px 3px 33px;
+    margin-bottom: 13px;
+  }
+
+  .wrap-descr {
+    font-size: 16px;
+    line-height: 29px;
+  }
+
+  .main__right-wrap {
+    margin-bottom: 24px;
+  }
+
+  .main__right-wrap {
+    flex-direction: row;
+  }
+
+  .wrap-item:first-child {
+    margin-right: 20px;
+    margin-bottom: 0px;
+  }
+
+  .btn {
+    font-size: 48px;
+    line-height: 58px;
+    padding: 27px 124px 10px 124px;
+    margin-bottom: 60px;
+  }
+
+  body {
+    background-position: 40% 0%;
+  }
+
+  .pop-up__left {
+    display: block;
+    background-image: url(../img/pop-up.webp);
+    /* background-position: center -20%; */
+    background-size: cover;
+    width: 464px;
+    height: 520px;
+  }
+
+  .consultation__form {
+    padding: 20px 80px;
+    margin-bottom: 0px;
+  }
+
+  .consultation__form-text {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .consultation__form__general {
+    font-size: 12px;
+    line-height: 19px;
+    margin-bottom: 15px;
+  }
+
+  .options__label {
+    font-size: 12px;
+  }
+
+  .pop-up__header-link {
+    font-size: 15px;
+  }
+
+  .pop-up__account-link {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 767px) {
   .title {
     font-size: 40px;
@@ -215,7 +311,7 @@
   .pop-up__close {
     right: 21px;
     top: 25px;
-}
+  }
 }
 
 @media (max-width: 375px) {

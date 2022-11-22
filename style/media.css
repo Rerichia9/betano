@@ -231,6 +231,10 @@
     background-position: 18% 0;
   }
 
+  .wrap-item {
+    justify-content: center;
+  }
+
   .title {
     font-size: 28px;
     line-height: 34px;
@@ -238,22 +242,23 @@
   }
 
   .wrap-btn {
-    font-size: 22px;
+    font-size: 15px;
     line-height: 29px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding: 7px 12px 2px 12px;
   }
 
   .wrap-descr {
+    text-align: center;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 16px;
   }
 
   .btn {
     font-size: 16px;
     line-height: 19px;
     padding: 19px 70px 10px 70px;
-    margin-bottom: 65px;
+    margin-bottom: 45px;
   }
 
   .footer__rights {
@@ -311,6 +316,10 @@
   .pop-up__close {
     right: 21px;
     top: 25px;
+  }
+
+  .main__right {
+    margin-top: 30px;
   }
 }
 

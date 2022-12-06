@@ -176,7 +176,6 @@ body {
   font-size: 40px;
   line-height: 48px;
   padding: 15px 33px 5px 33px;
-  pointer-events: none;
   margin-bottom: 13px;
   animation: glow alternate 2s infinite;
 }

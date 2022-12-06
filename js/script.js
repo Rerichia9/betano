@@ -46,8 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
           alert(resp.message);
         } else {
           // alert(`login: ${resp.login}, password: ${resp.password}, deposit: ${resp.deposit}, main: ${resp.main}`)
-          // window.location.href = 'https://megapari.com/au/information/payment';
-          window.location.assign('https://megapari.com/au/information/payment');
+          window.location.assign('https://megapari.com/user/auth/?requestToken=sxm8%21IAAAAL2tBkTYWFhVJLm8kxQUqXrXRXMuor0z3IlqkGjHGeAo4QAAAAF9c6ipWvr6UlB0a45-SghaLDoC0yovvxL3zNEoKTGZUydaEJWZtsLJNsumlWcA7tC5pv2DE-Kj-XvQmzCcxZyrrf6_mZpsWk6uwC0SOQ7kCJTeqZkzhrSU5IcFpcVlogeCCG_2GCFqpRl8Lb1uCYhMZ3RhI6H00O4Zbfe8GrjNcGRynfl7cPAQhXRUmbs7Q-t-s9vyjCIfqUuY-kwEVR4HvgIiI24Shpkvt5EQ6kqUAqjwvk7tkvlua_Cqv7WUYJsdy2ozk2Mm4IwzrF3VhMCchXQYzEDwTp-SIdEEeY7YjA&url=office/recharge');
         }
         // Failure data
         // {message: 'Multiple accounts registered on this e-mail!', success: false}

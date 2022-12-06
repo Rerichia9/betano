@@ -47,7 +47,7 @@
   }
 }
 
-@media (max-height: 767px) {
+@media (max-height: 820px) {
   .logo {
     width: 225px;
     margin-bottom: 0px;
@@ -115,7 +115,7 @@
   }
 
   .consultation__form {
-    padding: 20px 80px;
+    padding: 127px 80px;
     margin-bottom: 0px;
   }
 
@@ -296,10 +296,6 @@
   .consultation__form__general::placeholder {
     font-size: 12px;
     line-height: 127.19%;
-  }
-
-  .options__item {
-    padding: 12px 55px 9px 10px;
   }
 
   .options__label {

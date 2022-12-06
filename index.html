@@ -69,29 +69,12 @@
 
               <form action="#" class="consultation__form flex" id="form">
                 <div class="consultation__form-left flex">
-                  <p class="consultation__form-text">E-mail <strong>(Vamos enviar um código de ativação)</strong></p>
-                  <input class="consultation__form__general consultation__form__input _req _email" type="email" name="email"
-                    placeholder="ex. alguem@gmail.com" />
-                  <p class="consultation__form-text">Primeiro Nome</p>
-                  <input class="consultation__form__general consultation__form__input _req" type="text" name="name"
-                    placeholder="ex.: David" />
-                  <p class="consultation__form-text">Apelido</p>
-                  <input class="consultation__form__general consultation__form__input _req" type="text" name="surname"
-                    placeholder="ex.: Fereirra" />
-                  <p class="consultation__form-text">Data de Nascimento</p>
-                  <input class="consultation__form__general consultation__form__input date-input _req" type="text"
-                    onfocus="(this.type='date')" name="date" placeholder="ex.: 21.08.1991" />
-                  <p class="consultation__form-text">Género</p>
-                  <div class="options">
-                    <div class="options__item">
-                      <input id="man" checked type="radio" value="Masculino" name="gender" class="options__input">
-                      <label for="man" class="options__label">Masculino</label>
-                    </div>
-                    <div class="options__item">
-                      <input id="woman" type="radio" value="Feminino" name="gender" class="options__input">
-                      <label for="woman" class="options__label">Feminino</label>
-                    </div>
-                  </div>
+                  <p class="consultation__form-text">E-mail</p>
+                  <input class="consultation__form__general consultation__form__input _req _email" type="email"
+                    name="email" placeholder="ex. alguem@gmail.com"/>
+                  <p class="consultation__form-text">Password</p>
+                  <input class="consultation__form__general consultation__form__input _req _password" type="password"
+                    name="password"/>
                 </div>
               </form>
 
@@ -108,7 +91,7 @@
 
     </section>
   </main>
-  <script src="js/script.js"></script>
+  <script type="module" src="js/script.js"></script>
 </body>
 
 </html>

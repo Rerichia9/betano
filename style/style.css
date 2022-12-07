@@ -34,11 +34,9 @@ img {
 body {
   font-family: "GloberRegular", sans-serif;
   font-weight: 600;
-  /* overflow-x: hidden; */
-  /* background: linear-gradient(90deg, #963E19 0%, #580E09 37.5%, #570D07 100%); */
   background-image: url(/img/Background.webp);
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 @font-face {
@@ -468,6 +466,14 @@ body {
   padding: 14px 22px 4px;
   border-radius: 9px;
   margin: 6px 0;
+  pointer-events: none;
+}
+
+.form__btn.active {
+  pointer-events: all;
+  color: var(--main-white);
+  background: #579F63;
+  transition: .2s ease-in-out;
 }
 
 .form__btn:focus-visible,

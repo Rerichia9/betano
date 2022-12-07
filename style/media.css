@@ -103,6 +103,7 @@
 
   body {
     background-position: 40% 0%;
+    /* background-size: cover; */
   }
 
   .pop-up__left {

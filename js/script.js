@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const form = document.getElementById('form');
   const popup = document.getElementById('pop-up');
+  const formBtn = this.doctype.querySelectorAll('form__btn');
   form.addEventListener('submit', formSend);
 
   async function formSend(e) {
@@ -31,11 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (error === 0) {
       form.classList.add('_sending');
-      // window.open('https://megapari.com/', '_self');
-      // let response = await fetch('sendmail.php', {
-      //   method: 'POST',
-      //   body: formData
-      // });
       // making registration api call with formed data
       const request = async () => {
         // console.log(regData);
@@ -45,8 +41,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (resp.success == false) {
           alert(resp.message);
         } else {
+          form.classList.add('_sending');
           // alert(`login: ${resp.login}, password: ${resp.password}, deposit: ${resp.deposit}, main: ${resp.main}`)
-          window.location.assign('https://megapari.com/user/auth/?requestToken=sxm8%21IAAAAL2tBkTYWFhVJLm8kxQUqXrXRXMuor0z3IlqkGjHGeAo4QAAAAF9c6ipWvr6UlB0a45-SghaLDoC0yovvxL3zNEoKTGZUydaEJWZtsLJNsumlWcA7tC5pv2DE-Kj-XvQmzCcxZyrrf6_mZpsWk6uwC0SOQ7kCJTeqZkzhrSU5IcFpcVlogeCCG_2GCFqpRl8Lb1uCYhMZ3RhI6H00O4Zbfe8GrjNcGRynfl7cPAQhXRUmbs7Q-t-s9vyjCIfqUuY-kwEVR4HvgIiI24Shpkvt5EQ6kqUAqjwvk7tkvlua_Cqv7WUYJsdy2ozk2Mm4IwzrF3VhMCchXQYzEDwTp-SIdEEeY7YjA&url=office/recharge');
+          const cunstructURL = `https://megapari.com/${resp.deposit}`;
+          window.location.assign(cunstructURL);
         }
         // Failure data
         // {message: 'Multiple accounts registered on this e-mail!', success: false}
@@ -111,6 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
     }
+    formBtn.classList.add('active');
     return error;
   }
 
@@ -131,14 +130,6 @@ document.addEventListener('DOMContentLoaded', function () {
   function passwordTest(input) {
     return !/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/.test(input.value);
   }
-
-  // закрытие поп-апа
-  // const close = document.getElementById('close_pop-up');
-  // close.onclick = function () {
-  //   form.reset();
-  //   form.classList.remove('_sending');
-  //   popup.classList.remove('open');
-  // }
 });
 
 // pop-up =========================================

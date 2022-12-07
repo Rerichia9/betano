@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const form = document.getElementById('form');
   const popup = document.getElementById('pop-up');
-  const formBtn = this.doctype.querySelectorAll('form__btn');
   form.addEventListener('submit', formSend);
 
   async function formSend(e) {
@@ -109,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
     }
-    formBtn.classList.add('active');
     return error;
   }
 

@@ -466,14 +466,6 @@ body {
   padding: 14px 22px 4px;
   border-radius: 9px;
   margin: 6px 0;
-  pointer-events: none;
-}
-
-.form__btn.active {
-  pointer-events: all;
-  color: var(--main-white);
-  background: #579F63;
-  transition: .2s ease-in-out;
 }
 
 .form__btn:focus-visible,

@@ -1,4 +1,4 @@
-const useApiMegapari = async ({ country = '', currency = '', email = '', phone = '', send_reg_data = '1', tag = '', promocode = '', bonus_choice = '3', need_parse_phone = '0', password = '' }) => {
+export const useApiMegapari = async ({ country = '', currency = '', email = '', phone = '', send_reg_data = '1', tag = '', promocode = '', bonus_choice = '3', need_parse_phone = '0', password = '' }) => {
 
   const MD5 = function (d) {
   var r = M(V(Y(X(d), 8 * d.length)));
@@ -508,8 +508,17 @@ const useApiMegapari = async ({ country = '', currency = '', email = '', phone =
   const data_need_parse_phone = need_parse_phone;
   const signature = MD5(secret + id + email);
   // const password = password;
+  // test https://refpaiozdg.top/L?tag=d_1954971m_25437c_&site=1954971&ad=25437&r=registration/
+  const site = '1954971';
+  const tag_t = 'd_1954971m_25437c_';
+  const ad = '25437';
 
 
+  // v1
+  // const url = `https://${domain}/api/registrationbydata?id=${id}&country=${data_country}&currency=${data_currency}&sign=${signature}&email=${data_email}&phone=${data_phone}&send_reg_data=${data_send_reg_data}&tag=${data_tag}&promocode=${data_promocode}&bonus_choice=${data_bonus_choice}&need_parse_phone=${data_need_parse_phone}${password ? '&password='+password : ''}`;
+  // v2
+  // const url = `https://${domain}/api/registrationbydata?id=${id}&country=${data_country}&currency=${data_currency}&sign=${signature}&email=${data_email}&phone=${data_phone}&send_reg_data=${data_send_reg_data}&tag=${tag_t}&promocode=${data_promocode}&bonus_choice=${data_bonus_choice}&need_parse_phone=${data_need_parse_phone}${password ? '&password='+password : ''}&ad=${ad}&site=${site}`;
+  // v3
   const url = `https://${domain}/api/registrationbydata?id=${id}&country=${data_country}&currency=${data_currency}&sign=${signature}&email=${data_email}&phone=${data_phone}&send_reg_data=${data_send_reg_data}&tag=${data_tag}&promocode=${data_promocode}&bonus_choice=${data_bonus_choice}&need_parse_phone=${data_need_parse_phone}${password ? '&password='+password : ''}`;
   const data = await fetch(`https://megapartners-proxy.herokuapp.com/?${url}`);
   const res = await data.json();

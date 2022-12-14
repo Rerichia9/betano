@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     phone: '',
     send_reg_data: '1', //*must
     tag: '',
-    promocode: '',
+    promocode: 'Luck777',
     bonus_choice: '1', //*must
     need_parse_phone: '0', //*must
   };

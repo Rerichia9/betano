@@ -115,9 +115,17 @@
     height: 520px;
   }
 
-  .consultation__form {
+  /* .consultation__form {
     padding: 127px 80px;
     margin-bottom: 0px;
+  } */
+
+  .pop-up__right {
+    height: 520px;
+  }
+
+  .consultation__form {
+    padding: 0px;
   }
 
   .consultation__form-text {
@@ -141,6 +149,14 @@
 
   .pop-up__account-link {
     font-size: 15px;
+  }
+
+  .pop-up__header-link {
+    padding-right: 10px;
+  }
+
+  .pop-up__header-help {
+    transform: scale(0.8);
   }
 }
 
@@ -201,6 +217,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
   }
 
   .pop-up__content {

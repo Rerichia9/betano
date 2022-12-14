@@ -298,6 +298,11 @@ body {
 
 .pop-up__right {
   max-width: 745px;
+  height: 860px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .consultation__form-text {
@@ -311,6 +316,7 @@ body {
 
 .pop-up__header {
   background-color: var(--main-white);
+  width: 100%;
 }
 
 .pop-up__header-wrap {
@@ -324,6 +330,7 @@ body {
   background-color: var(--main-white);
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .pop-up__header-help {
@@ -378,9 +385,9 @@ body {
 
 /* form ============================================================*/
 .consultation__form {
-  padding: 249px 180px;
+  /* padding: 249px 180px; */
   align-items: center;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   position: relative;
   font-family: 'Roboto';
 }

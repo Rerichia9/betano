@@ -484,3 +484,33 @@ body {
 .options__label {
   color: var(--main-black);
 }
+
+.promocode_container {
+  padding: 10px 5px;
+  border: 2px dotted var(--main-orange);
+  border-radius: 10px;
+  max-width: 383px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+}
+.promocode_title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15.5px;
+  line-height: 127.19%;
+  color: var(--main-orange);
+}
+.promocode_value {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 32.5px;
+  line-height: 94.19%; 
+  color: var(--main-orange);
+  width: 100%;
+  text-align: center;
+}

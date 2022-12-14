@@ -143,6 +143,13 @@ openPopupButtons.forEach((button) => {
   });
 });
 
+document.querySelectorAll(".wrap-btn").forEach((button) => {
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
+    popupBg.classList.add('open');
+  });
+});
+
 closePopupButton.addEventListener('click', () => {
   popupBg.classList.remove('open');
   popup.classList.remove('open');

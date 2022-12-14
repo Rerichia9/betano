@@ -412,6 +412,7 @@ body {
 }
 
 .consultation__form-left {
+  display: flex;
   flex-direction: column;
 }
 
@@ -470,9 +471,9 @@ body {
   font-weight: 700;
   font-size: 15.5px;
   line-height: 127.19%;
-  padding: 14px 22px 4px;
+  padding: 8px 22px 4px;
   border-radius: 9px;
-  margin: 6px 0;
+  align-self: center;
 }
 
 .form__btn:focus-visible,

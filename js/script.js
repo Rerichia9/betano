@@ -5,7 +5,7 @@ import useApiMegapari from '/js/api/api_megapari.js';
 document.addEventListener('DOMContentLoaded', function () {
   // DATA FOR REGISTRATION OM MEGAPARI.COM
   const regData = {
-    country: 'PT', //*must
+    country: 'BR', //*must
     currency: 'EUR', //*must
     email: '', //*must
     password: '', //*must
